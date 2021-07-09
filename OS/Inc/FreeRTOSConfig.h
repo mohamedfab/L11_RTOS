@@ -3,7 +3,7 @@
 #define FREERTOS_CONFIG_H
 
 /* Define Frequency for CPU */
-#define F_CPU 8000000UL
+#define F_CPU 16000000UL
 /* Include AVR Headers */
 #include <avr/io.h>
 #include <avr/interrupt.h>
@@ -12,7 +12,7 @@
 #define configUSE_IDLE_HOOK			0
 #define configUSE_TICK_HOOK			0
 #define configCPU_CLOCK_HZ			( F_CPU )
-#define configTICK_RATE_HZ			( ( TickType_t ) 1000 )
+#define configTICK_RATE_HZ			( ( TickType_t ) 1000 )/*	1 ms	*/
 #define configMAX_PRIORITIES		( 4 )
 #define configMINIMAL_STACK_SIZE	( ( unsigned short ) 100 )
 #define configTOTAL_HEAP_SIZE		( (size_t ) ( 500 ) )		// Change HEAP size according to use (number of tasks to be performed)
