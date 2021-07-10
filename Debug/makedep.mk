@@ -4,6 +4,8 @@
 
 APP\main.c
 
+HAL\LED\Src\Led.c
+
 MCAL\DIO\Src\Dio.c
 
 MCAL\UART\Src\Uart.c
